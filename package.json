@@ -11,6 +11,7 @@
     "private": "true",
     "scripts": {
         "start": "bun packages/node_modules/node-red/red.js",
+        "build:exe": "bun build --compile --target bun --packages external --outfile red.exe scripts/red-launcher.js",
         "test": "grunt",
         "build": "grunt build",
         "dev": "grunt dev",
@@ -41,6 +42,7 @@
         "cookie-parser": "1.4.7",
         "cors": "2.8.5",
         "cronosjs": "1.7.1",
+        "debug": "4.4.3",
         "denque": "2.1.0",
         "express": "4.22.1",
         "express-session": "1.18.2",
