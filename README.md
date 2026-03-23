@@ -14,6 +14,10 @@
 
 </div>
 
+## Bun Info:
+This is an ai-ported version of node-red v4.1.7 to run natively with bun v1.3.11 using bun's websocket `bun.serve()`.
+When executing normal node-red with bun, i noticed connection timeouts every 5 seconds in the comms websocket (ws). This fixes the issue.
+
 ## Quick Start
 
 Check out https://nodered.org/docs/getting-started/ for full instructions on getting
