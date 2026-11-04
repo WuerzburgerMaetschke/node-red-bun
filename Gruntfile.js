@@ -127,7 +127,10 @@ module.exports = function(grunt) {
         },
         concat: {
             options: {
-                separator: ";",
+                // Newline after ";": minified vendor files may end with a
+                // "//# sourceMappingURL" comment without trailing newline
+                // (dompurify >= 3.4), which would swallow the next file.
+                separator: ";\n",
             },
             build: {
                 src: [
